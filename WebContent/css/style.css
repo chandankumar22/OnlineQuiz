@@ -1,0 +1,123 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+.wrappergrid{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+  //*grid-template-rows: auto auto auto auto auto;*/
+}
+/*.wrappergrid :nth-child(even){
+  background-color: grey;
+}
+.wrappergrid :nth-child(odd){
+  background-color: pink;
+}*/
+.navcontainer{
+  display: grid;
+  grid-column: 1/7;
+  grid-row: 1/2;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+.logo{
+
+}
+
+.navigation{
+    background-color: black;
+  /*grid-area: navigation;*/
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+    padding: 12px;
+}
+
+.image{
+  /*grid-area: image;
+  border: 2px black solid;*/
+  width: 100%;
+  grid-column: 1/7;
+
+}
+
+#java{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#c{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+#python{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#cpp{
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+
+
+#database{
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+#htmlcss{
+  grid-column: 5/7;
+  grid-row: 4/5;
+}
+
+/*#php{
+  grid-area: php;
+  border: 2px black solid;
+  grid-column: 5/6;
+  grid-row: 4/5;
+}*/
+.sub img{
+  border: 3px #003333 solid;
+  border-radius: 25px;
+}
+.sub{
+  justify-self: center;
+  padding: 5px;
+  margin: 10px;
+}
+.footer{
+
+  /*grid-area: footer;*/
+  grid-column: 1/7;
+  background-color: black;
+  align-content: center;
+  height: 100px;
+}
+.footer div{
+  padding-top: 20px;color: white;
+  padding-bottom: auto;
+  text-align: center;
+  font-size: 44px;
+}
+.navbar ul{
+ list-style-type: none;
+}
+.navbar ul li{
+  display: inline;
+  padding-right: 30px;
+}
+.navbar a{
+text-decoration: none;
+font-family: monospace;
+font-size: 20px;
+color: white;
+}
+.navbar a:hover{
+  color: grey;
+  text-decoration: none;
+}
+input:invalid{
+	border:1px red solid;
+}
